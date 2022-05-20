@@ -1,4 +1,5 @@
 ## maven配置管理
+---
 * 配置分类
 ```java
     maven的配置主要有三种方式：
@@ -6,7 +7,7 @@
     2. ${home}/.m2/settings.xml
     3. ${projects}/pom.xml
 ```
-
+---
  * settings.xml配置详情
 ```java
     <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -23,10 +24,12 @@
     </settings>
 
 ```
+---
 * rep仓库分类
+a.
 
 
-
+---
 * repo配置的优先级
 ```java
 * 在settings.xml中的profile优先级高于pom中的
@@ -34,8 +37,7 @@
 * 同在settings.xml中profiles中配置的repository,根据从前到后配置
 * 如果有user setting和globel settings，则两者合并，其中重复的配置，以user settings为准。
 ```
-
-
+---
 ## 依赖管理
 * 依赖传递
 * 依赖继承
