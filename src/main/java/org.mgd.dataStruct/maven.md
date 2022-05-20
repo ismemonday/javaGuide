@@ -1,11 +1,9 @@
 ## maven配置管理
 * 配置分类
-```java
     maven的配置主要有三种方式：
-    1. ${maven安装目录}/conf/settings.xml
-    2. ${home}/.m2/settings.xml
-    3. ${projects}/pom.xml
-```
+    - ${maven安装目录}/conf/settings.xml
+    - ${home}/.m2/settings.xml
+    - ${projects}/pom.xml
  * [配置详情如setting.xml](https://maven.apache.org/settings.html)
 
       - localRepository     本地仓库地址${user.home}/.m2/repository
@@ -20,7 +18,45 @@
         - repositories          获取依赖的仓库配置
         - pluginRepositories    获取插件的仓库配置
       - activeProfiles/>    设置活跃环境
-* [配置详情如pom.xml](https://maven.apache.org/pom.html)
+* [配置详情如pom.xml](https://maven.apache.org/pom.html)<br/>
+  *--The Basics--*
+  - groupId
+  - artifactId
+  - version
+  - packaging
+  - dependencies
+  - parent
+  - dependencyManagement
+  - modules
+  - properties
+  *--Build Settings--*
+  - build
+  - reporting
+  - 
+  <!-- Build Settings -->
+  <build>...</build>
+  <reporting>...</reporting>
+ 
+  <!-- More Project Information -->
+  <name>...</name>
+  <description>...</description>
+  <url>...</url>
+  <inceptionYear>...</inceptionYear>
+  <licenses>...</licenses>
+  <organization>...</organization>
+  <developers>...</developers>
+  <contributors>...</contributors>
+ 
+  <!-- Environment Settings -->
+  <issueManagement>...</issueManagement>
+  <ciManagement>...</ciManagement>
+  <mailingLists>...</mailingLists>
+  <scm>...</scm>
+  <prerequisites>...</prerequisites>
+  <repositories>...</repositories>
+  <pluginRepositories>...</pluginRepositories>
+  <distributionManagement>...</distributionManagement>
+  <profiles>...</profiles>
 
 ---
 * repo仓库分类<br>
