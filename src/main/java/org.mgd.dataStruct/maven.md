@@ -8,27 +8,18 @@
 ```
  * [配置详情如setting.xml](https://maven.apache.org/settings.html)
 
-      - localRepository    
-        本地仓库地址${user.home}/.m2/repository
-      - interactiveMode    
-        交互默认，默认为true,目前不知道干啥用的
-      - offline           
-        默认false,是否连接远程服务器
-      - pluginGroups    
-        自定义插件组
-      - servers           
-        服务配置，一般用于配置服务用户名和密码
-      - mirrors           
-        镜像配置
-      - proxies           
-        代理
-      - profiles           配置环境
-        - activation
-            环境的默认        
-        - repositories
-        - pluginRepositories
-      - activeProfiles/>     
-        设置活跃环境
+      - localRepository     本地仓库地址${user.home}/.m2/repository
+      - interactiveMode     交互默认，默认为true,目前不知道干啥用的
+      - offline             默认false,是否连接远程服务器
+      - pluginGroups        自定义插件组
+      - servers             服务配置，一般用于配置服务用户名和密码
+      - mirrors             镜像配置
+      - proxies             代理
+      - profiles            配置环境
+        - activation            环境的默认配置        
+        - repositories          获取依赖的仓库配置
+        - pluginRepositories    获取插件的仓库配置
+      - activeProfiles/>    设置活跃环境
 * [配置详情如pom.xml](https://maven.apache.org/pom.html)
 
 ---
