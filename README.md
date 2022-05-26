@@ -7,7 +7,7 @@
 ## 基础工具
   - [maven](src/main/java/org/mgd/tools/maven.md)
   - [git](src/main/java/org/mgd/tools/git.md)
-  - [ss](.)
+  - [docker](src/main/java/org/mgd/tools/docker.md)
 ## java体系框架
   - [spring](.)
   - [java日志](.)
@@ -17,6 +17,7 @@
  - 高可用方案
    - [keepalived搭建高可用方案](src/main/java/org/mgd/avialiables/keepalived搭建高可用服务.md)
  - 高并发方案
+    - [nginx搭建高并发方案](src/main/java/org/mgd/avialiables/keepalived搭建高可用服务.md)
 
 ## 领域相关
  - lowCode相关
