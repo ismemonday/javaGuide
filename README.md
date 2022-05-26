@@ -5,8 +5,8 @@
 ## 数据相关
   - [数据结构](src/main/java/org/mgd/dataStruct/数据结构.md)
 ## 基础工具
-  - [maven学习](src/main/java/org/mgd/tools/maven.md)
-  - [git学习](.)
+  - [maven](src/main/java/org/mgd/tools/maven.md)
+  - [git](src/main/java/org/mgd/tools/git.md)
   - [ss](.)
 ## java体系框架
   - [spring](.)
