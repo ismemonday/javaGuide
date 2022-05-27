@@ -2,7 +2,7 @@
 
 ---
 ## 操作系统
-  - [ubuntu安全重启](src/main/java/org/mgd/os/ubuntu安装重启.md)
+  - [ubuntu安全重启](src/main/java/org/mgd/os/ubuntu安全重启.md)
 ## 数据相关
   - [数据结构](src/main/java/org/mgd/dataStruct/数据结构.md)
 ## 基础工具
@@ -18,7 +18,7 @@
  - 高可用方案
    - [keepalived搭建高可用方案](src/main/java/org/mgd/avialiables/keepalived搭建高可用服务.md)
  - 高并发方案
-    - [nginx搭建高并发方案](src/main/java/org/mgd/avialiables/keepalived搭建高可用服务.md)
+    - [nginx搭建高并发方案](src/main/java/org/mgd/concurrency/nginx搭建高并发方案.md)
 
 ## 领域相关
  - lowCode相关
