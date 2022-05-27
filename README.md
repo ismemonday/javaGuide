@@ -2,6 +2,7 @@
 
 ---
 ## 操作系统
+  - [ubuntu安全重启](src/main/java/org/mgd/os/ubuntu安装重启.md)
 ## 数据相关
   - [数据结构](src/main/java/org/mgd/dataStruct/数据结构.md)
 ## 基础工具
