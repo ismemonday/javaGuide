@@ -98,3 +98,9 @@ WantedBy=multi-user.target
 - systemctl disable nginx
 
         取消服务开机自启动--去除/etc/systemd/system/multi-user.target.wants/nginx.service的软连接
+
+## systemctl环境注意点
+```shell
+    systemctl 默认读取的环境配置在 usr/local/sbin:/usr/local/bin:usr/sbin:usr/bin:/sbin:/bin:/snap/bin下面。故其他配置不会生效，例如配置export PATH=$PATH:$JAVA_HOME,此时的java无法获取到。
+    
+```
