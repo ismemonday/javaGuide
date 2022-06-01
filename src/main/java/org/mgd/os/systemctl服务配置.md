@@ -73,7 +73,9 @@ WantedBy=multi-user.target
 ```
 
 ## systemctl命令
-
+- systemctl daemon-reload
+    
+        配置生效：每次修改了/usr/lib/systemcd/system/*.service，都需要执行此命令来使修改生效
 - systemctl start nginx 
     
         启动nginx服务--执行nginx.service中[service]配置的ExecStart配置的代码
