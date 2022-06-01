@@ -1,5 +1,11 @@
 [回到主目录](/README.md)
 # systemctl服务配置
+---
+
+## linux中systemctl服务配置在/usr/lib/systemd/system/下，以nginx为例子看nginx.service文件解析
+
+```shell
+
 #service配置文件分为[Unit]、[Service]、[Install]三个部分。
 
 #[Unit]部分：指定服务描述、启动顺序、依赖关系，包括Description、Documentation、After、Before、Wants、Requires。
@@ -63,3 +69,24 @@ PrivateTmp=true
 [Install]
 # “WantedBy=multi-user.target”表示当系统以多用户方式（默认的运行级别）启动时，这个服务需要被自动运行。
 WantedBy=multi-user.target
+
+```
+
+## systemctl命令
+
+- systemctl start nginx 
+    
+        启动nginx服务--执行nginx.service中[service]配置的ExecStart配置的代码
+- systemctl stop nginx
+        
+        停止nginx服务--执行nginx.service中[service]配置的ExecStop配置的代码
+- systemctl restart nginx
+        
+        重启nginx服务--先执行stop再执行start
+- systemctl enable nginx
+
+        配置服务开机自启动--在/etc/systemd/system/multi-user.target.wants/下创建软连接ngixn.service指向/usr/lib/systemd/system/nginx.service,系统在启动的时候会遍历此目录下服务并自启动
+
+- systemctl disable nginx
+
+        取消服务开机自启动--去除/etc/systemd/system/multi-user.target.wants/nginx.service的软连接
