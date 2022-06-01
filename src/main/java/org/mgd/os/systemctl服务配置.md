@@ -99,8 +99,15 @@ WantedBy=multi-user.target
 
         取消服务开机自启动--去除/etc/systemd/system/multi-user.target.wants/nginx.service的软连接
 
-## systemctl环境注意点
-```shell
-    systemctl 默认读取的环境配置在 usr/local/sbin:/usr/local/bin:usr/sbin:usr/bin:/sbin:/bin:/snap/bin下面。故其他配置不会生效，例如配置export PATH=$PATH:$JAVA_HOME,此时的java无法获取到。
-    
-```
+## systemctl环境变量注意点
+    - systemctl环境变量是独立的，故系统用户中配置的环境变量无效.
+    - 查看systemctl环境变量 systemctl show-environment
+        ```shell
+            可以看到systemctl默认的环境变量位置： usr/local/sbin:/usr/local/bin:usr/sbin:usr/bin:/sbin:/bin:/snap/bin
+            如何在用户环境下配置了export PATH=$PATH:$JAVA_HOME,此时在systemctl环境下的java无法获取到。
+        ```
+    - 修改systemctl环境变量 
+        ```shell
+            当前会话重启电脑失效：systemctl set-environment PATH=$PATH; #注意此时$PATH获取到的是当前用户下的环境变量
+                       永久生效：在/etc/systemd/system.conf 中找到DefaultEnvironment并设置DefaultEnvironment="PATH=/usr/bin:/usr/local/bin:$JAVA_HOME/bin" ,执行systemctl daemon-reload 使得配置生效     
+        ```
