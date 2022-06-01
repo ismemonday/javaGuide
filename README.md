@@ -4,7 +4,7 @@
 ## 操作系统
   - [ubuntu安全重启](src/main/java/org/mgd/os/ubuntu安全重启.md)
   - [linux环境变量优先级](.)
-  - [systemctl服务配置](.)
+  - [systemctl服务配置](src/main/java/org/mgd/os/systemctl服务配置.md)
   - [linux和windows设置开机自启动](.)
 ## 数据相关
   - [数据结构](src/main/java/org/mgd/dataStruct/数据结构.md)
