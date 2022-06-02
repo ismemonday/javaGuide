@@ -74,8 +74,8 @@ PrivateTmp=true
 #[Install]部分：指定服务的启用信息，只有在systemctl的enable与disable命令在启用/停用单元时才会使用此部分。
 [Install]
 # “WantedBy=multi-user.target”表示当系统以多用户方式（默认的运行级别）启动时，这个服务需要被自动运行。
-WantedBy=multi-user.target
-
+WantedBy=multi-user.target  #在执行systemctl enable 时，系统会将服务安装到/etc/systemd/system/multi-user.target.wants/下面
+WantedBy=multi-user.target  #在执行systemctl enable 时，系统会将服务安装到/etc/systemd/system/default.target.wants/下面
 ```
 
 ## systemctl命令
