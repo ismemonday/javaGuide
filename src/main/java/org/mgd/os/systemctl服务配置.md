@@ -5,7 +5,7 @@
 ## systemctl命令认识
 ```shell
     启动一个systemctl服务，linux系统会自动去/usr/lib/systemd/system/*.service或/etc/systemd/system/*.service目录下寻找被执行的文件，当文件不存在侧报错。
-    其中/etc/systemd/system/*.service中配置的服务，在系统启动时会自动执行。
+    ** 其中/etc/systemd/system/multi-user.target.wants*.service中配置的服务，在系统启动时会自动执行。
 ```
 
 ## linux中systemctl服务配置在/usr/lib/systemd/system/下，以nginx为例子看nginx.service文件解析
