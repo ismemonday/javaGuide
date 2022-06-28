@@ -13,6 +13,7 @@
   - [git](src/main/java/org/mgd/tools/git.md)
   - [docker](src/main/java/org/mgd/tools/docker.md)
 ## java体系框架
+  - [java基础扫盲](https://github.com/monday110/JDK_LEARN)
   - [spring](.)
   - [java日志](.)
   - [juc java并发编程](.)
