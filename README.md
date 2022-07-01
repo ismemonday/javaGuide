@@ -14,6 +14,9 @@
   - [docker](src/main/java/org/mgd/tools/docker.md)
 ## java体系框架
   - [java基础扫盲](https://github.com/monday110/JDK_LEARN)
+  - [jvm](.)
+  - [数据结构](.)
+  - [算法](.)
   - [spring](.)
   - [java日志](.)
   - [juc java并发编程](.)
