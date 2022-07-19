@@ -219,3 +219,39 @@
 	    进入宿主机/home/moaguidong/tem/temp,发现了容器创建中创建的文件containertest 
         ```
          ![](imgs/docker30.png)
+
+# docker 进阶
+
+## Docker architecture
+![](imgs2/archi.png)
+## Docker 学习目标-学会使用docker构建(build)，运行(run)，部署服务(deploy)。
+### [1-使用 Docker 容器化特定语言的应用程序](https://docs.docker.com/language/)
+### [2-使用命令行构建并运行镜像](https://docs.docker.com/engine/reference/commandline/run/)
+### [3-编写一个 Dockerfile构建运行应用程序](https://docs.docker.com/engine/reference/builder/)
+### [4-使用多阶段构建镜像](https://docs.docker.com/develop/develop-images/multistage-build/#stop-at-a-specific-build-stage)
+### [5-使用docker-compose 同时启动多个依赖应用程序](https://docs.docker.com/compose/compose-file/compose-file-v3/)
+### [6-使用swarm弹性部署应用](https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/)
+### [7-管理容器网络](https://docs.docker.com/network/)
+### [8-使用volumes卷持久化容器数据](https://docs.docker.com/storage/volumes/)
+### [9-使用docker仓库存储镜像](https://docs.docker.com/registry/)
+
+---
+
+## 1.通过命令行部署运行容器
+![](imgs2/1.png)
+## 2.通过dockerfile快速部署一个容器
+![](imgs2/2.png)
+## 3.通过docker-compose一键部署多个容器
+![](imgs2/3.png)
+## 4.通过docker swarm弹性部署服务
+![](imgs2/4.png)
+## 5.docker网络
+![](imgs2/5.png)
+## 6.docker Volumes数据卷
+![](imgs2/6.png)
+## 7.docker registry私有仓库
+![](imgs2/7.png)
+![](imgs2/72png.png)
+![](imgs2/73.png)
+## 8.docker 镜像迁移
+![](imgs2/8.png)
