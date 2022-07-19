@@ -14,7 +14,7 @@
   - [docker](src/main/java/org/mgd/tools/docker.md)
 ## java体系框架
   - ## java基础
-    - [java基础扫盲](https://github.com/monday110/JDK_LEARN)
+    - [JDK源码+java基础](https://github.com/monday110/JDK_LEARN)
   - ## net网络
     - [java网络编程编程-netty源码解析](https://github.com/monday110/netty-simple-source)
     - [modbus协议基础](src/main/java/org/mgd/net/Modbus.md)
