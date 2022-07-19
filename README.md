@@ -18,7 +18,7 @@
   - ## net网络
     - [java网络编程编程-netty源码解析](https://github.com/monday110/netty-simple-source)
     - [modbus协议基础](src/main/java/org/mgd/net/Modbus.md)
-    - [mc协议基础](https://github.com/monday110/jlib-melsec)
+    - [mc协议基础-mc协议java库](https://github.com/monday110/jlib-melsec)
     - [png格式解析](src/main/java/org/mgd/png/png.md)
   - ## juc并发
     - [juc java并发编程](.)
