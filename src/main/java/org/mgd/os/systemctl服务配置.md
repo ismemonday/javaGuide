@@ -66,6 +66,7 @@ EnvironmentFile=/etc/nginx/nginx.conf
 ExecStart=/usr/sbin/nginx -c /etc/nginx/nginx.conf
 ExecReload=/usr/local/nginx/sbin/nginx -s reload
 ExecStop=/usr/local/nginx/sbin/nginx -s quit
+ExecReload=/bin/kill -s HUP $MAINPID  //表示重启时结束当前进程
 
 # 设为 true表示在进程的文件系统名字空间中挂载私有的 /tmp 与 /var/tmp 目录， 也就是不与名字空间外的其他进程共享临时目录。 这样做会增加进程的临时文件安全性，但同时也让进程之间无法通过 /tmp 或 /var/tmp 目录进行通信。
 # 适用于web系统服务，不适用于mysql之类的数据库用户服务，数据库用户服务设为false。
