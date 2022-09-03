@@ -112,3 +112,5 @@ WantedBy=default.target  #在执行systemctl enable 时，系统会将服务安�
             当前会话重启电脑失效：systemctl set-environment PATH=$PATH; #注意此时$PATH获取到的是当前用户下的环境变量
                        永久生效：在/etc/systemd/system.conf 中找到DefaultEnvironment并设置DefaultEnvironment="PATH=/usr/bin:/usr/local/bin:$JAVA_HOME/bin" ,执行systemctl daemon-reload 使得配置生效     
         ```
+        
+ ## systemct其他参考文件（https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html）
