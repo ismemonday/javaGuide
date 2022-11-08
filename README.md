@@ -8,6 +8,7 @@
   - [linux和windows设置开机自启动](.)
 ## 数据相关
   - [数据结构](src/main/java/org/mgd/dataStruct/数据结构.md)
+  - [mysql慢查询](src/main/java/org/mgd/dataStruct/mysql慢查询.md)
 ## 基础工具
   - [maven](src/main/java/org/mgd/tools/maven.md)
   - [git](src/main/java/org/mgd/tools/git.md)
@@ -50,6 +51,7 @@
 ## 架构相关
  - 高可用方案
    - [keepalived搭建高可用方案](src/main/java/org/mgd/avialiables/keepalived搭建高可用服务.md)
+   - [mysql高可用方案](src/main/java/org/mgd/avialiables/mysql高可用.md)
  - 高并发方案
     - [nginx搭建高并发方案](src/main/java/org/mgd/concurrency/nginx搭建高并发方案.md)
 
