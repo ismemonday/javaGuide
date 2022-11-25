@@ -16,7 +16,15 @@ server{
   }
   
   location /good/ {  
-    root /home/dt  //绝对路径或者相对路径都可以,访问http://localhost:80/good/aab-->访问home/dt/good/aab
+  //访问 root+location
+  //绝对路径或者相对路径都可以,访问http://localhost:80/good/aab-->访问home/dt/good/aab
+    root /home/dt  
+  }
+  
+   location /good/ {
+   //访问 alias替换location
+   //绝对路径或者相对路径都可以,访问http://localhost:80/good/aab-->访问home/dt/aab
+    alias /home/dt  
   }
 }
 ```
