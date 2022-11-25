@@ -13,6 +13,7 @@
   - [maven](src/main/java/org/mgd/tools/maven.md)
   - [git](src/main/java/org/mgd/tools/git.md)
   - [docker](src/main/java/org/mgd/tools/docker.md)
+  - [minio](src/main/java/org/mgd/tools/minio.md)
 ## java基础体系
   - ## java基础
     - [JDK源码+java基础](https://github.com/monday110/JDK_LEARN)
