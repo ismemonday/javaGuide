@@ -26,6 +26,13 @@ server{
    //绝对路径或者相对路径都可以,访问http://localhost:80/good/aab-->访问home/dt/aab
     alias /home/dt  
   }
+     location /file {
+    	alias /home/files;
+	autoindex on; //开启目录显示
+	autoindex_exact_size on; //显示文件大小
+	autoindex_localtime on; //显示文件时间
+	charset utf-8; 
+  }
 }
 ```
 ## 反向代理
