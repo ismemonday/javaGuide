@@ -8,7 +8,7 @@
   - [linux和windows设置开机自启动](.)
 ## 数据相关
   - [数据结构](src/main/java/org/mgd/dataStruct/数据结构.md)
-  - [mysql慢查询](src/main/java/org/mgd/dataStruct/mysql慢查询.md)
+  - [mysql常见问题及处理方案](src/main/java/org/mgd/dataStruct/mysql慢查询.md)
 ## 基础工具
   - [maven](src/main/java/org/mgd/tools/maven.md)
   - [git](src/main/java/org/mgd/tools/git.md)
