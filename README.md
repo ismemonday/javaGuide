@@ -3,9 +3,9 @@
 ---
 ## 操作系统
   - [ubuntu安全重启](src/main/java/org/mgd/os/ubuntu安全重启.md)
-  - [linux环境变量优先级](.)
-  - [systemctl服务配置](src/main/java/org/mgd/os/systemctl服务配置.md)
-  - [linux和windows设置开机自启动](.)
+  - [linux环境变量优先级](src/main/java/org/mgd/os/linux环境变量优先级.md)
+  - [linux服务配置和开机自启](src/main/java/org/mgd/os/systemctl服务配置.md)
+  - [windows服务配置和开机自启](src/main/java/org/mgd/os/windows服务配置和开机自启.md)
 ## 数据相关
   - [数据结构](src/main/java/org/mgd/dataStruct/数据结构.md)
   - [mysql常见问题及处理方案](src/main/java/org/mgd/dataStruct/mysql慢查询.md)
