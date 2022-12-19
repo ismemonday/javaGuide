@@ -5,6 +5,13 @@
 ## .bat和.exe文件的区别
 ```java
         都是可执行文件，.bat是dos编写的脚本语言，.exe是二进制文件没有可读性，适合作用于windows安装包，安全。两者都能双击被执行，只是解析执行器不同，其作用是相同的。
+
+```
+## 设置环境变量的两种方式
+```java
+        set PATH=xxx\xx\bin    //配置当前环境临时环境变量
+        setx path "xx\xx\bin"   //配置当前用户永久环境变量
+        setx path "xx\xx\bin" /m   //配置系统永久环境变量
 ```
 ## windows安装包
 借助工具inno_setup制作windows安装包
