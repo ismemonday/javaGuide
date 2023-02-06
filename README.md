@@ -27,7 +27,8 @@
   - ## jvm虚拟机
     - [jvm](.)
   - ## 数据结构
-    - [数据结构](.)
+    - [数据结构](src/main/java/org/mgd/dataStruct/数据结构.md)
+    - [队列-阻塞队列.md](src/main/java/org/mgd/dataStruct/队列-阻塞队列.md)
   - ## 算法
     - [算法](.)
     
