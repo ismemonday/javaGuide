@@ -17,7 +17,7 @@
 ## java基础体系
   - ## java基础
     - [JDK源码+java基础](https://github.com/monday110/JDK_LEARN)
-    - [java流Stream](src/main/java/org/mgd/stream.md)
+    - [java流Stream](src/main/java/org/mgd/base/stream.md)
   - ## net网络
     - [java网络编程编程-netty源码解析](https://github.com/monday110/netty-simple-source)
     - [modbus协议基础](src/main/java/org/mgd/net/Modbus.md)
