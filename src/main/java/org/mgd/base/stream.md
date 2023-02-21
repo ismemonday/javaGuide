@@ -63,4 +63,10 @@ Stream.map(value-{return Result})
 ```java
 //收集
 Stream.collect();
+  //收集为list
+ List<Integer> lists = Stream.of(1, 2, 3).collect(Collectors.toList());
+ //收集为set
+ Set<Integer> sets = Stream.of(1, 2, 3).collect(Collectors.toSet());
+ //收集为map
+ Map<Integer, Integer> collect = Stream.of(1, 2, 3).collect(Collectors.toMap(k -> k, (k)->1));
 ```
