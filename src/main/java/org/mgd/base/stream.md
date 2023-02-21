@@ -43,8 +43,24 @@ Set.of(E... e)
 ### - 流获取
 ```java
   //1-集合获取流
-  
-  //2-引用类型
+    Collection.stream()
+  //2-数组获取流
+    Arrays.stream()
+  //3-相同类型对象
+    Stream.of(T... t)
+    
 ```
 ### - 流操作
+```java
+//过滤
+Stream.filter()
+//操作
+Stream.map(value-{return Result})
+//合并
+ Stream.concat(stream1,stream2 )
+```
 ### - 流收集
+```java
+//收集
+Stream.collect();
+```
