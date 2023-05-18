@@ -25,4 +25,4 @@
 |0B	 |GATEWAY TARGET DEVICE FAILED TO RESPOND  	|与网关结合使用,通常意味着设备不可用
 
 ## 一图详解  
-![](modbus协议.png)
+![图片加载中](modbus协议.png)
