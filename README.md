@@ -57,6 +57,8 @@
    - [mysql高可用方案](src/main/java/org/mgd/avialiables/mysql高可用.md)
  - 高并发方案
     - [nginx搭建高并发方案](src/main/java/org/mgd/concurrency/nginx搭建高并发方案.md)
+ - 双机热备方案
+    
 
 ## 领域相关
  - lowCode相关

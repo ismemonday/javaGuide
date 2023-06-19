@@ -41,13 +41,44 @@ server{
   listen 80; //监听80端口,一个server有切只有一个listen
   servername statistic_resource; //服务器名称
   location /good1 {  
-   proxy_pass http://localhost:80/api     //访问localhost:80/good1/ab==访问http://localhost:80/apiab
+   proxy_pass http://localhost:80/api     //访问localhost:80/good1/ab==访问http://localhost:80/api/ab
+   proxy_set_header Host $proxy_host;     //修改请求头
   }
   
     location /good2 {  
-   proxy_pass http://localhost:80/api/  //访问localhost:80/good1/ab==访问http://localhost:80/api/ab
+   proxy_pass http://localhost:80/api/  //访问localhost:80/good2/ab==访问http://localhost:80/api/good2/ab
   }
-}
+} 
+
+```
+- ### 反向代理/替换规则
+```shell  
+  #例1  
+  location /v1 {
+    proxy_pass: http://localhost:81/name
+  }
+  http:localhost:8080/v1/hello-->http://localhost:81/name/hello
+  #例2
+  location /v2 {
+    proxy_pass: http://localhost:81/name/
+  }
+  http:localhost:8080/v2/hello-->http://localhost:81/name//hello
+  #例3
+  location /v3/ {
+    proxy_pass: http://localhost:81/name
+  }
+   http:localhost:8080/v3/hello-->http://localhost:81/namehello
+  #例4
+  location /v4/ {
+    proxy_pass: http://localhost:81/name/
+  }
+  http:localhost:8080/v4/hello-->http://localhost:81/name/hello
+  
+  #总结：
+    location x
+    proxy_pass y
+    例如请求url为:http://localhost:8080 x ****  ---> y ***
+    判断location和proxy_pass结尾是否需要加/？  ==>   要么都加要么都不加
 ```
 
 ## 负载均衡
