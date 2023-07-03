@@ -22,7 +22,7 @@ show grants for 新用户;
 ```
 ## 修改用户登录方式
 ```shell
-修改为localhost登陆：	update mysql.user set hoset='localhost' where user='用户'；
+修改为localhost登陆：	update mysql.user set host='localhost' where user='用户'；
 flush privileges;
 
 ```
