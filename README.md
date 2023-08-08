@@ -12,6 +12,7 @@
   - [mysql常见用户权限操作](src/main/java/org/mgd/dataStruct/mysql用户权限操作.md)
   - [mysql索引](src/main/java/org/mgd/dataStruct/mysql索引.md)
 ## 基础工具
+  - [gradle](src/main/java/org/mgd/tools/gradle.md)
   - [maven](src/main/java/org/mgd/tools/maven.md)
   - [git](src/main/java/org/mgd/tools/git.md)
   - [docker](src/main/java/org/mgd/tools/docker.md)

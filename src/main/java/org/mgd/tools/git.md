@@ -19,7 +19,7 @@
     ```
 
 * 本地新分支关联上远程分支，并推送
-    ```java
+    ```txt
     关联：	git branch --set-upstream-to=origin/远程分支名 本地分支名
     推送：   git push origin HEAD:远程分支名
     ```
