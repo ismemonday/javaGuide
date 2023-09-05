@@ -1,3 +1,4 @@
+[回到主目录](/README.md)
 ### 使用keepalived搭建一主二备的高可用服务
 * 准备三台服务器
     ![基础服务器](imgs/keepalived1.png)
