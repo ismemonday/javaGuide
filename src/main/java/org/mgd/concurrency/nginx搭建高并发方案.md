@@ -3,7 +3,7 @@
 ```shell
 server{
   listen 80; //监听80端口,一个server有切只有一个listen
-  servername statistic_resource; //服务器名称
+  server_name statistic_resource; //服务器名称
   default_type application/json; //响应类型默认(text/plain)
   keepalive_timeout  65; //长连接时间s,超过65s没有请求就自动断开
   add_header Access-Control-Allow-Origin *; //添加请求头,此可用于解决跨域
@@ -39,7 +39,7 @@ server{
 ```shell
 server{
   listen 80; //监听80端口,一个server有切只有一个listen
-  servername statistic_resource; //服务器名称
+  server_name statistic_resource; //服务器名称
   location /good1 {  
    proxy_pass http://localhost:80/api     //访问localhost:80/good1/ab==访问http://localhost:80/api/ab
    proxy_set_header Host $proxy_host;     //修改请求头
