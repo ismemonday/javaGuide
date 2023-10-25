@@ -8,7 +8,7 @@
   - [windows服务配置和开机自启](src/main/java/org/mgd/os/windows服务配置和开机自启.md)
 ## 数据相关
   - [数据结构](src/main/java/org/mgd/dataStruct/数据结构.md)
-  - [mysql常见问题及处理方案](src/main/java/org/mgd/dataStruct/mysql慢查询.md)
+  - [mysql常见问题及处理方案](src/main/java/org/mgd/dataStruct/mysql常见问题.md)
   - [mysql常见用户权限操作](src/main/java/org/mgd/dataStruct/mysql用户权限操作.md)
   - [mysql索引](src/main/java/org/mgd/dataStruct/mysql索引.md)
 ## 基础工具
