@@ -108,8 +108,8 @@
     innodb_force_recovery=6
   b.登录mysql并使用mysqldump导出sql语句
     mysqldump --default-character-set=utf8mb4 -uroot -p dbname >dbname.sql
-  *注意使用>会导致中文乱码
-    mysqldump --default-character-set=utf8mb4 -uroot -p dbname  --result-file=dbname.sql
+  *注意使用>会导致中文乱码  --hex-blob 把binary,varbinary,blob,bit等类型导出为16进制
+    mysqldump --default-character-set=utf8mb4 --hex-blob -uroot -p dbname  --result-file=dbname.sql
 ```
 - 重新安装mysql服务
 ```text

@@ -21,6 +21,8 @@
   - ## java基础
     - [JDK源码+java基础](https://github.com/monday110/JDK_LEARN)
     - [java流Stream](src/main/java/org/mgd/base/stream.md)
+    - [记录一次跨域问题处理](src/main/java/org/mgd/base/cors.md)
+    - [自定义注解的基本探讨&aop思考](src/main/java/org/mgd/annotation/annotation.md)
   - ## net网络
     - [java网络编程编程-netty源码解析](https://github.com/monday110/netty-simple-source)
     - [modbus协议](src/main/java/org/mgd/net/Modbus.md)
