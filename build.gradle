@@ -1,0 +1,7 @@
+apply plugin: 'application'
+mainClassName = 'org.mgd.unsafe.UnsafeApp'
+
+task run{
+    jvmArgs('--illegal-access=deny')
+    jvmArgs('--add-opens=java.base/jdk.internal.misc=ALL-UNNAMED')
+}

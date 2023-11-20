@@ -1,6 +1,5 @@
 package org.mgd.juc;
 
-import com.sun.jdi.IncompatibleThreadStateException;
 
 import java.util.concurrent.*;
 

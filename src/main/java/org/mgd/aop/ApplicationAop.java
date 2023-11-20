@@ -1,5 +1,6 @@
 package org.mgd.aop;
 
+import org.mgd.annotation.InterfaceImpl;
 import org.mgd.aop.jdk.*;
 
 import java.lang.reflect.*;
@@ -60,5 +61,9 @@ public class ApplicationAop{
         People peopleProxy = new PeopleProxy(myInvocationHandler);
         peopleProxy.work();
         peopleProxy.learn(99);
+    }
+
+    public void test(){
+        InterfaceImpl anInterface = new InterfaceImpl();
     }
 }
