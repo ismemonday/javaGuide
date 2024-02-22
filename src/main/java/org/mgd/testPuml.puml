@@ -1,0 +1,18 @@
+@startuml
+participant 交管 as traffic
+participant 门控制器 as doorController #green
+participant 驱动 as driver
+participant device
+
+
+autonumber
+traffic -> doorController:申请/释放资源
+activate traffic
+activate doorController
+device<-doorController:查询资源状态
+device->doorController:反馈资源状态
+destroy traffic
+doorController->doorController:判断门资源占用情况
+doorController->doorController:处理开关门操作
+doorController->traffic:反馈成功
+@enduml

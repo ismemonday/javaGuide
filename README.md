@@ -19,6 +19,8 @@
   - [minio](src/main/java/org/mgd/tools/minio.md)
 ## java基础体系
   - ## java基础
+    - [Https 整合SpringBoot](src/main/java/org/mgd/https/https.md) 
+    - [SSO认证授权](src/main/java/org/mgd/sso/sso.md) 
     - [JDK源码+java基础](https://github.com/monday110/JDK_LEARN)
     - [java流Stream](src/main/java/org/mgd/base/stream.md)
     - [记录一次跨域问题处理](src/main/java/org/mgd/base/cors.md)
