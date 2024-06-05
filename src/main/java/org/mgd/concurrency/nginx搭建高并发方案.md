@@ -73,6 +73,11 @@ server{
     proxy_pass: http://localhost:81/name/
   }
   http:localhost:8080/v4/hello-->http://localhost:81/name/hello
+  #例5 如果proxy_pass没有uri 则直接拼接
+  location /v4/ {
+    proxy_pass: http://localhost:81
+  }
+  http:localhost:8080/v4/hello-->http://localhost:81/v4/name/hello
   
   #总结：
     location x

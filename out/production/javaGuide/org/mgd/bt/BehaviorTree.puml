@@ -1,0 +1,66 @@
+@startuml
+interface BTNode {
+    - BTNode parentNode;
+    - NodeState nodeState;
+}
+
+enum NodeState{
+    RUNNING,
+    SUCCESS,
+    FAILURE
+}
+abstract class BTControlNode implements BTNode {
+    //控制节点
+    List<BTNode> childNodes;
+}
+
+class BTSequenceNode extends BTControlNode {
+    //序列节点
+}
+
+class BTParallelNode extends BTControlNode {
+    //并行节点
+}
+
+class BTFallbackNode extends BTControlNode {
+    //回退节点
+}
+
+class BTSwitchNode extends BTControlNode {
+    //选择节点
+}
+
+
+abstract class BTDecoratorNode implements BTNode {
+    //装饰节点
+    BTNode childNode;
+}
+
+class BTInverterNode extends BTDecoratorNode {
+    //反转节点
+}
+
+class BTDelayNode extends BTDecoratorNode {
+    //延迟节点
+}
+
+class BTRetryNode extends BTDecoratorNode {
+    //重试节点
+}
+
+
+
+abstract class BTLeafNode implements BTNode {
+    //叶子节点,执行动作没有子
+}
+
+class BTActionNode extends BTLeafNode {
+    //动作节点
+}
+
+class BTConditionNode extends BTLeafNode {
+    //条件节点
+}
+
+
+@enduml

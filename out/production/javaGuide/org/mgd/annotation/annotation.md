@@ -5,7 +5,7 @@
 准备两个自定义注解，配置可以作用于类和方法，一个注解使用@Inherited,一个注解不使用@Inherited
 ```
 [NoInheritedPeo注解](NoInheritedPeo.java)<br>
-[InheritedPeo注解](InheritedPeo.java)
+[InheritedPeo注解](InheritedPeo)
 
 - 测试注解在类和方法上的继承关系
 [关系的具体代码](Application.java)
@@ -23,6 +23,4 @@
 结论：
 由于jdK的动态代理是基于在内存中根据接口动态生成的实现类，而接口上的自定义注解不具备继承性
 但是基于cglib实现的动态代理是基于继承实体类实现的，没有重新目标方法，自定义注解具备继承性
-
-参考Spring中AnnotationUtils类
 ```

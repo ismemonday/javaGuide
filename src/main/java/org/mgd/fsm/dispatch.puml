@@ -1,0 +1,85 @@
+@startuml
+class VehicleTask{
+private Queue<List<Step>> appliedSteps;
+private List<Step> steps;
+private CheckPointRequest applyingCheckPoint;
+private Queue<CheckPointRequest> futureCheckPoints;
+private Queue<CheckPointRequest> sentCheckPoints;
+private Queue<Request> futureRequests;
+private Queue<Request> sentRequests;
+private Queue<Request> sentAgvRequests
+}
+class VehicleInfo{
+	private AgvPosition agvPosition;
+	private Velocity velocity;
+	private List<NodeState> nodeStates
+	private List<EdgeState> edgeStates
+	private List<Load> loads
+	private List<ActionState> actionStates
+	List<ErrorEntry> errors
+
+}
+class Task{
+	private List<SubTask> subTasks;
+	public BtModel structure
+}
+class Route{
+	  private long cost;
+    private List<Step> steps;
+}
+class SubTask{
+	private Route route
+}
+
+class Vehicle{}
+
+interface Step{}
+
+class DefaultVehicleStateComparer implements VehicleStateComparer{
+Optional<List<VehicleStateEventModel>> compareVehicleState(Vehicle vehicle, State newState);
+}
+class DefaultVehicleManager implements VehicleManager{
+	// while(true){agvPersistDataInfoService.syncVehicle(new HashSet<>(VEHICLE_MAP.values()))}
+	Map<String, Vehicle> VEHICLE_MAP;
+}
+class SpinStep implements Step{}
+class MoveLineStep implements Step{}
+class MoveBezierStep implements Step{}
+
+interface VehicleTaskManager{
+    void execueSubTask(SubTask subTask, Vehicle vehicle);
+    boolean canExecNewSubTask(Vehicle vehicle);
+    void reRouteCurSubTask(Vehicle vehicle, SubTask subTask);
+    void cancelCurSubTask(SimpleVehicle vehicle);
+}
+interface VehicleManager{}
+interface TaskManager{}
+class VehicleStateManager implements ApplicationRunner{
+	//while(true){vehicleStateComparer.compareVehicleState()}
+}
+
+class DefaultTaskManager implements TaskManager{}
+abstract class AbstractVehicleTaskManager implements VehicleTaskManager{
+    buildCheckPointRequests(Vehicle vehicle, MoveRequest moveRequest)
+}
+class DefaultVehicleTaskManager extends AbstractVehicleTaskManager{}
+
+interface VehicleRequestManager{
+    void sendRequest(Vehicle vehicle);
+    void reRouteSendRequest(Vehicle vehicle);
+    void sendRequest(Vehicle vehicle, Request request);
+    void sendRequest(Request request);
+}
+
+Vehicle --> VehicleTask
+Vehicle --> VehicleInfo
+Task o--> SubTask
+SubTask --> Route
+Route o--> Step
+VehicleStateComparer <- VehicleStateManager
+VehicleStateManager -> VehicleManager
+AbstractVehicleTaskManager ->TaskManager
+AbstractVehicleTaskManager ->VehicleRequestManager
+VehicleManager <- AbstractVehicleTaskManager
+DefaultVehicleManager o-->Vehicle
+@enduml
