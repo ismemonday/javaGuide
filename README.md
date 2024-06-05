@@ -16,7 +16,7 @@
 - [mysql常见用户权限操作](src/main/java/org/mgd/dataStruct/mysql用户权限操作.md)
 - [mysql索引](src/main/java/org/mgd/dataStruct/mysql索引.md)
 - [队列-阻塞队列.md](src/main/java/org/mgd/dataStruct/队列-阻塞队列.md)
-- [最短路径规划-Dijkstra](org/mgd/pathFind/findPath.md)
+- [最短路径规划-Dijkstra](src/main/java/org/mgd/pathFind/findPath.md)
 -
 
 ## 基础工具
@@ -38,7 +38,7 @@
     - [自定义注解的基本探讨&aop思考](src/main/java/org/mgd/annotation/annotation.md)
     - [Unsafe类的基础知识](src/main/java/org/mgd/unsafe/unsafe.md)
     - [跨域的思考](src/main/java/org/mgd/base/cors/cors.md)
-    - [web容器(servlet,filter,interceptor)](org/mgd/base/webServlet/webServlet.md)
+    - [web容器(servlet,filter,interceptor)](src/main/java/org/mgd/base/webServlet/webServlet.md)
 - ### net网络
     - [java网络编程编程-netty源码解析](https://github.com/monday110/netty-simple-source)
     - [modbus协议](src/main/java/org/mgd/net/Modbus.md)
