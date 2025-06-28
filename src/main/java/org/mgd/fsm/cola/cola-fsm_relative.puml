@@ -1,0 +1,41 @@
+@startuml
+interface StateMachine<S, E, C>{
+      S fireEvent(S sourceState, E event, C ctx);
+}
+class StateMachineImpl implements StateMachine{
+    private final Map<S, State<S, E, C>> stateMap;
+}
+
+interface State<S, E, C>{
+ Transition<S,E,C> addTransition(E event, State<S, E, C> target, TransitionType transitionType)
+}
+class StateImpl<S,E,C> implements State{
+private EventTransitions eventTransitions = new EventTransitions()
+
+}
+
+class EventTransitions<S,E,C>{
+private HashMap<E, List<Transition<S,E,C>>> eventTransitions;
+}
+
+interface Transition<S, E, C>{
+State<S, E, C> transit(C ctx, boolean checkCondition);
+}
+class TransitionImpl implements Transition{
+    private State<S, E, C> source;
+
+    private State<S, E, C> target;
+
+    private E event;
+
+    private Condition<C> condition;
+
+    private Action<S,E,C> action;
+
+    private TransitionType type = TransitionType.EXTERNAL;
+}
+
+StateMachineImpl o-> StateImpl
+StateImpl -> EventTransitions
+EventTransitions o-> TransitionImpl
+@enduml

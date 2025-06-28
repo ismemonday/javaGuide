@@ -1,0 +1,25 @@
+@startuml
+enum State {
+    Waiting,
+    Running,
+    Paused,
+    Stopped
+}
+
+class StateContext {
+    - State currentState
+    + setState(newState: State)
+    + triggerEvent(event: String)
+}
+
+class StateMachine {
+    + processEvent(context: StateContext, event: String)
+    # transitionTable: Map<State, Map<String, State>>
+    # ...
+}
+
+StateContext "1" -- "1" StateMachine: uses
+
+note right of StateMachine: transitionTable定义了状态间的转移规则<br/>例如，当处在Running状态下，接收到"pause"事件，会转移到Paused状态。
+
+@enduml

@@ -16,8 +16,9 @@
 - [mysql常见用户权限操作](src/main/java/org/mgd/dataStruct/mysql用户权限操作.md)
 - [mysql索引](src/main/java/org/mgd/dataStruct/mysql索引.md)
 - [队列-阻塞队列.md](src/main/java/org/mgd/dataStruct/队列-阻塞队列.md)
-- [最短路径规划-Dijkstra](src/main/java/org/mgd/pathFind/findPath.md)
--
+- [最短路径规划-Dijkstra(未完成)](src/main/java/org/mgd/pathFind/findPath.md)
+- [java异步编程-CompletableFuture](src/main/java/org/mgd/pathFind/findPath.md)
+- [google event vs spring event](src/main/java/org/mgd/pathFind/findPath.md)
 
 ## 基础工具
 
@@ -39,6 +40,7 @@
     - [Unsafe类的基础知识](src/main/java/org/mgd/unsafe/unsafe.md)
     - [跨域的思考](src/main/java/org/mgd/base/cors/cors.md)
     - [web容器(servlet,filter,interceptor)](src/main/java/org/mgd/base/webServlet/webServlet.md)
+    - [APT和SPI](src/main/java/org/mgd/apt/apt.md)
 - ### net网络
     - [java网络编程编程-netty源码解析](https://github.com/monday110/netty-simple-source)
     - [modbus协议](src/main/java/org/mgd/net/Modbus.md)
@@ -73,11 +75,13 @@
 - 双机热备方案
 
 ## 领域相关
-
+- [mapf-多机路径规划](src/main/java/org/mgd/mapf/mapf.md)
 - lowCode相关
     - [流程引擎](.)
     - [规则引擎](.)
     - [表达式引擎](.)
 - 模型相关
-    - [行为树](.)
-    - [状态机](.)
+    - [行为树](src/main/java/org/mgd/bt/bt.md)
+    - [状态机(FSM/状态模式/策略模式)](src/main/java/org/mgd/fsm/fsm.md)
+## 开源
+  -[gralde项目开源到mvn中央仓库](src/main/java/org/mgd/ossh/ossh.md)
